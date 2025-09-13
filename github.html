@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://githowto.com/ru/tagging_versions -->
+<html lang="en" class="dark" style=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style type="text/css">:root, :host {
+  --fa-font-solid: normal 900 1em/1 "Font Awesome 6 Free";
+  --fa-font-regular: normal 400 1em/1 "Font Awesome 6 Free";
+  --fa-font-light: normal 300 1em/1 "Font Awesome 6 Pro";
+  --fa-font-thin: normal 100 1em/1 "Font Awesome 6 Pro";
+  --fa-font-duotone: normal 900 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-regular: normal 400 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-light: normal 300 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-duotone-thin: normal 100 1em/1 "Font Awesome 6 Duotone";
+  --fa-font-brands: normal 400 1em/1 "Font Awesome 6 Brands";
+  --fa-font-sharp-solid: normal 900 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-regular: normal 400 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-light: normal 300 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-thin: normal 100 1em/1 "Font Awesome 6 Sharp";
+  --fa-font-sharp-duotone-solid: normal 900 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-regular: normal 400 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-light: normal 300 1em/1 "Font Awesome 6 Sharp Duotone";
+  --fa-font-sharp-duotone-thin: normal 100 1em/1 "Font Awesome 6 Sharp Duotone";
+}
+
+svg:not(:root).svg-inline--fa, svg:not(:host).svg-inline--fa {
+  overflow: visible;
+  box-sizing: content-box;
+}
+
+.svg-inline--fa {
+  display: var(--fa-display, inline-block);
+  height: 1em;
+  overflow: visible;
+  vertical-align: -0.125em;
+}
+.svg-inline--fa.fa-2xs {
+  vertical-align: 0.1em;
+}
+.svg-inline--fa.fa-xs {
+  vertical-align: 0em;
+}
+.svg-inline--fa.fa-sm {
+  vertical-align: -0.0714285705em;
+}
+.svg-inline--fa.fa-lg {
+  vertical-align: -0.2em;
+}
+.svg-inline--fa.fa-xl {
+  vertical-align: -0.25em;
+}
+.svg-inline--fa.fa-2xl {
+  vertical-align: -0.3125em;
+}
+.svg-inline--fa.fa-pull-left {
+  margin-right: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-pull-right {
+  margin-left: var(--fa-pull-margin, 0.3em);
+  width: auto;
+}
+.svg-inline--fa.fa-li {
+  width: var(--fa-li-width, 2em);
+  top: 0.25em;
+}
+.svg-inline--fa.fa-fw {
+  width: var(--fa-fw-width, 1.25em);
+}
+
+.fa-layers svg.svg-inline--fa {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fa-layers-counter, .fa-layers-text {
+  display: inline-block;
+  position: absolute;
+  text-align: center;
+}
+
+.fa-layers {
+  display: inline-block;
+  height: 1em;
+  position: relative;
+  text-align: center;
+  vertical-align: -0.125em;
+  width: 1em;
+}
+.fa-layers svg.svg-inline--fa {
+  transform-origin: center center;
+}
+
+.fa-layers-text {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transform-origin: center center;
+}
+
+.fa-layers-counter {
+  background-color: var(--fa-counter-background-color, #ff253a);
+  border-radius: var(--fa-counter-border-radius, 1em);
+  box-sizing: border-box;
+  color: var(--fa-inverse, #fff);
+  line-height: var(--fa-counter-line-height, 1);
+  max-width: var(--fa-counter-max-width, 5em);
+  min-width: var(--fa-counter-min-width, 1.5em);
+  overflow: hidden;
+  padding: var(--fa-counter-padding, 0.25em 0.5em);
+  right: var(--fa-right, 0);
+  text-overflow: ellipsis;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-counter-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-bottom-right {
+  bottom: var(--fa-bottom, 0);
+  right: var(--fa-right, 0);
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom right;
+}
+
+.fa-layers-bottom-left {
+  bottom: var(--fa-bottom, 0);
+  left: var(--fa-left, 0);
+  right: auto;
+  top: auto;
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: bottom left;
+}
+
+.fa-layers-top-right {
+  top: var(--fa-top, 0);
+  right: var(--fa-right, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top right;
+}
+
+.fa-layers-top-left {
+  left: var(--fa-left, 0);
+  right: auto;
+  top: var(--fa-top, 0);
+  transform: scale(var(--fa-layers-scale, 0.25));
+  transform-origin: top left;
+}
+
+.fa-1x {
+  font-size: 1em;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-6x {
+  font-size: 6em;
+}
+
+.fa-7x {
+  font-size: 7em;
+}
+
+.fa-8x {
+  font-size: 8em;
+}
+
+.fa-9x {
+  font-size: 9em;
+}
+
+.fa-10x {
+  font-size: 10em;
+}
+
+.fa-2xs {
+  font-size: 0.625em;
+  line-height: 0.1em;
+  vertical-align: 0.225em;
+}
+
+.fa-xs {
+  font-size: 0.75em;
+  line-height: 0.0833333337em;
+  vertical-align: 0.125em;
+}
+
+.fa-sm {
+  font-size: 0.875em;
+  line-height: 0.0714285718em;
+  vertical-align: 0.0535714295em;
+}
+
+.fa-lg {
+  font-size: 1.25em;
+  line-height: 0.05em;
+  vertical-align: -0.075em;
+}
+
+.fa-xl {
+  font-size: 1.5em;
+  line-height: 0.0416666682em;
+  vertical-align: -0.125em;
+}
+
+.fa-2xl {
+  font-size: 2em;
+  line-height: 0.03125em;
+  vertical-align: -0.1875em;
+}
+
+.fa-fw {
+  text-align: center;
+  width: 1.25em;
+}
+
+.fa-ul {
+  list-style-type: none;
+  margin-left: var(--fa-li-margin, 2.5em);
+  padding-left: 0;
+}
+.fa-ul > li {
+  position: relative;
+}
+
+.fa-li {
+  left: calc(-1 * var(--fa-li-width, 2em));
+  position: absolute;
+  text-align: center;
+  width: var(--fa-li-width, 2em);
+  line-height: inherit;
+}
+
+.fa-border {
+  border-color: var(--fa-border-color, #eee);
+  border-radius: var(--fa-border-radius, 0.1em);
+  border-style: var(--fa-border-style, solid);
+  border-width: var(--fa-border-width, 0.08em);
+  padding: var(--fa-border-padding, 0.2em 0.25em 0.15em);
+}
+
+.fa-pull-left {
+  float: left;
+  margin-right: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-pull-right {
+  float: right;
+  margin-left: var(--fa-pull-margin, 0.3em);
+}
+
+.fa-beat {
+  animation-name: fa-beat;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-bounce {
+  animation-name: fa-bounce;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.28, 0.84, 0.42, 1));
+}
+
+.fa-fade {
+  animation-name: fa-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-beat-fade {
+  animation-name: fa-beat-fade;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, cubic-bezier(0.4, 0, 0.6, 1));
+}
+
+.fa-flip {
+  animation-name: fa-flip;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, ease-in-out);
+}
+
+.fa-shake {
+  animation-name: fa-shake;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin {
+  animation-name: fa-spin;
+  animation-delay: var(--fa-animation-delay, 0s);
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 2s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, linear);
+}
+
+.fa-spin-reverse {
+  --fa-animation-direction: reverse;
+}
+
+.fa-pulse,
+.fa-spin-pulse {
+  animation-name: fa-spin;
+  animation-direction: var(--fa-animation-direction, normal);
+  animation-duration: var(--fa-animation-duration, 1s);
+  animation-iteration-count: var(--fa-animation-iteration-count, infinite);
+  animation-timing-function: var(--fa-animation-timing, steps(8));
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fa-beat,
+.fa-bounce,
+.fa-fade,
+.fa-beat-fade,
+.fa-flip,
+.fa-pulse,
+.fa-shake,
+.fa-spin,
+.fa-spin-pulse {
+    animation-delay: -1ms;
+    animation-duration: 1ms;
+    animation-iteration-count: 1;
+    transition-delay: 0s;
+    transition-duration: 0s;
+  }
+}
+@keyframes fa-beat {
+  0%, 90% {
+    transform: scale(1);
+  }
+  45% {
+    transform: scale(var(--fa-beat-scale, 1.25));
+  }
+}
+@keyframes fa-bounce {
+  0% {
+    transform: scale(1, 1) translateY(0);
+  }
+  10% {
+    transform: scale(var(--fa-bounce-start-scale-x, 1.1), var(--fa-bounce-start-scale-y, 0.9)) translateY(0);
+  }
+  30% {
+    transform: scale(var(--fa-bounce-jump-scale-x, 0.9), var(--fa-bounce-jump-scale-y, 1.1)) translateY(var(--fa-bounce-height, -0.5em));
+  }
+  50% {
+    transform: scale(var(--fa-bounce-land-scale-x, 1.05), var(--fa-bounce-land-scale-y, 0.95)) translateY(0);
+  }
+  57% {
+    transform: scale(1, 1) translateY(var(--fa-bounce-rebound, -0.125em));
+  }
+  64% {
+    transform: scale(1, 1) translateY(0);
+  }
+  100% {
+    transform: scale(1, 1) translateY(0);
+  }
+}
+@keyframes fa-fade {
+  50% {
+    opacity: var(--fa-fade-opacity, 0.4);
+  }
+}
+@keyframes fa-beat-fade {
+  0%, 100% {
+    opacity: var(--fa-beat-fade-opacity, 0.4);
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(var(--fa-beat-fade-scale, 1.125));
+  }
+}
+@keyframes fa-flip {
+  50% {
+    transform: rotate3d(var(--fa-flip-x, 0), var(--fa-flip-y, 1), var(--fa-flip-z, 0), var(--fa-flip-angle, -180deg));
+  }
+}
+@keyframes fa-shake {
+  0% {
+    transform: rotate(-15deg);
+  }
+  4% {
+    transform: rotate(15deg);
+  }
+  8%, 24% {
+    transform: rotate(-18deg);
+  }
+  12%, 28% {
+    transform: rotate(18deg);
+  }
+  16% {
+    transform: rotate(-22deg);
+  }
+  20% {
+    transform: rotate(22deg);
+  }
+  32% {
+    transform: rotate(-12deg);
+  }
+  36% {
+    transform: rotate(12deg);
+  }
+  40%, 100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.fa-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  transform: scale(1, -1);
+}
+
+.fa-flip-both,
+.fa-flip-horizontal.fa-flip-vertical {
+  transform: scale(-1, -1);
+}
+
+.fa-rotate-by {
+  transform: rotate(var(--fa-rotate-angle, 0));
+}
+
+.fa-stack {
+  display: inline-block;
+  vertical-align: middle;
+  height: 2em;
+  position: relative;
+  width: 2.5em;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: var(--fa-stack-z-index, auto);
+}
+
+.svg-inline--fa.fa-stack-1x {
+  height: 1em;
+  width: 1.25em;
+}
+.svg-inline--fa.fa-stack-2x {
+  height: 2em;
+  width: 2.5em;
+}
+
+.fa-inverse {
+  color: var(--fa-inverse, #fff);
+}
+
+.sr-only,
+.fa-sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.sr-only-focusable:not(:focus),
+.fa-sr-only-focusable:not(:focus) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.svg-inline--fa .fa-primary {
+  fill: var(--fa-primary-color, currentColor);
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa .fa-secondary {
+  fill: var(--fa-secondary-color, currentColor);
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-primary {
+  opacity: var(--fa-secondary-opacity, 0.4);
+}
+
+.svg-inline--fa.fa-swap-opacity .fa-secondary {
+  opacity: var(--fa-primary-opacity, 1);
+}
+
+.svg-inline--fa mask .fa-primary,
+.svg-inline--fa mask .fa-secondary {
+  fill: black;
+}</style><link rel="preload" href="https://githowto.com/_next/static/media/26a46d62cd723877-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="preload" href="https://githowto.com/_next/static/media/e4af272ccee01ff0-s.p.woff2" as="font" crossorigin="" type="font/woff2"><link rel="stylesheet" href="./github_files/e47c6173425299db.css" crossorigin="" data-precedence="next"><link rel="preload" as="script" fetchpriority="low" href="./github_files/webpack-a59ce8987a29f290.js" crossorigin=""><script src="./github_files/fd9d1056-3a0b46590fd28e44.js" async="" crossorigin=""></script><script src="./github_files/472-6566a41ec04287f8.js" async="" crossorigin=""></script><script src="./github_files/main-app-892c3dff08e9cd4c.js" async="" crossorigin=""></script><script src="./github_files/layout-15e9cc262f20297c.js" async=""></script><script src="./github_files/c33a6526-a35d7c4ab569570b.js" async=""></script><script src="./github_files/8b972f87-7000886eafc63ce4.js" async=""></script><script src="./github_files/aa7336d7-b690888f504d16c3.js" async=""></script><script src="./github_files/300-171190a177420fb6.js" async=""></script><script src="./github_files/page-fe771f97d594b6b7.js" async=""></script><link rel="preload" href="./github_files/js" as="script"><meta name="theme-color" content="#301E15"><title>11. Создание тегов версий</title><link rel="canonical" href="https://githowto.com/ru/tagging_versions"><link rel="alternate" hreflang="x-default" href="https://githowto.com/tagging_versions"><link rel="alternate" hreflang="pt-BR" href="https://githowto.com/pt-BR/tagging_versions"><link rel="alternate" hreflang="ru" href="https://githowto.com/ru/tagging_versions"><link rel="alternate" hreflang="uk" href="https://githowto.com/uk/tagging_versions"><meta name="next-size-adjust"><script>
+  let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
+  let isSystemDarkMode = darkModeMediaQuery.matches
+  let isDarkMode = window.localStorage.isDarkMode === 'true' || (!('isDarkMode' in window.localStorage) && isSystemDarkMode)
+  if (isDarkMode) {
+    document.documentElement.classList.add('dark')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#301E15");
+  } else {
+    document.documentElement.classList.remove('dark')
+    document.querySelector('meta[name="theme-color"]')?.setAttribute("content", "#f59e0a");
+  }
+  if (isDarkMode === isSystemDarkMode) {
+    delete window.localStorage.isDarkMode
+  }
+</script><script src="./github_files/polyfills-c67a75d1b6f99dc8.js" crossorigin="" nomodule=""></script><meta name="theme-color" content="#f59e0a"></head><body class="__className_423598 bg-white antialiased dark:bg-stone-900"><script src="./github_files/webpack-a59ce8987a29f290.js" crossorigin="" async=""></script><script>(self.__next_f=self.__next_f||[]).push([0]);self.__next_f.push([2,null])</script><script>self.__next_f.push([1,"1:HL[\"/_next/static/media/26a46d62cd723877-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n2:HL[\"/_next/static/media/e4af272ccee01ff0-s.p.woff2\",\"font\",{\"crossOrigin\":\"\",\"type\":\"font/woff2\"}]\n3:HL[\"/_next/static/css/e47c6173425299db.css\",\"style\",{\"crossOrigin\":\"\"}]\n0:\"$L4\"\n"])</script><script>self.__next_f.push([1,"5:I[3728,[],\"\"]\n7:I[9928,[],\"\"]\n8:I[3335,[\"185\",\"static/chunks/app/layout-15e9cc262f20297c.js\"],\"DarkModeDetector\"]\n9:I[6954,[],\"\"]\na:I[7264,[],\"\"]\n"])</script><script>self.__next_f.push([1,"4:[[[\"$\",\"link\",\"0\",{\"rel\":\"stylesheet\",\"href\":\"/_next/static/css/e47c6173425299db.css\",\"precedence\":\"next\",\"crossOrigin\":\"\"}]],[\"$\",\"$L5\",null,{\"buildId\":\"-B5G__o_k5yFKNnFdmZ2E\",\"assetPrefix\":\"\",\"initialCanonicalUrl\":\"/ru/create_a_project\",\"initialTree\":[\"\",{\"children\":[[\"slug\",\"ru/create_a_project\",\"oc\"],{\"children\":[\"__PAGE__?{\\\"slug\\\":[\\\"ru\\\",\\\"create_a_project\\\"]}\",{}]}]},\"$undefined\",\"$undefined\",true],\"initialHead\":[false,\"$L6\"],\"globalErrorComponent\":\"$7\",\"children\":[null,[\"$\",\"html\",null,{\"lang\":\"en\",\"suppressHydrationWarning\":true,\"children\":[[\"$\",\"head\",null,{\"children\":[[\"$\",\"$L8\",null,{}],[\"$\",\"meta\",null,{\"name\":\"theme-color\",\"content\":\"#f59e0a\"}]]}],[\"$\",\"body\",null,{\"className\":\"__className_423598 bg-white antialiased dark:bg-stone-900\",\"children\":[\"$\",\"$L9\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$La\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":[[\"$\",\"h2\",null,{\"children\":\"Not Found\"}],[\"$\",\"p\",null,{\"children\":\"Could not find requested resource\"}]],\"notFoundStyles\":[],\"childProp\":{\"current\":[\"$\",\"$L9\",null,{\"parallelRouterKey\":\"children\",\"segmentPath\":[\"children\",[\"slug\",\"ru/create_a_project\",\"oc\"],\"children\"],\"loading\":\"$undefined\",\"loadingStyles\":\"$undefined\",\"hasLoading\":false,\"error\":\"$undefined\",\"errorStyles\":\"$undefined\",\"template\":[\"$\",\"$La\",null,{}],\"templateStyles\":\"$undefined\",\"notFound\":\"$undefined\",\"notFoundStyles\":\"$undefined\",\"childProp\":{\"current\":[\"$Lb\",\"$Lc\",null],\"segment\":\"__PAGE__?{\\\"slug\\\":[\\\"ru\\\",\\\"create_a_project\\\"]}\"},\"styles\":[]}],\"segment\":[\"slug\",\"ru/create_a_project\",\"oc\"]},\"styles\":[]}]}]]}],null]}]]\n"])</script><script>self.__next_f.push([1,"c:\"$Ld\"\n"])</script><script>self.__next_f.push([1,"e:I[1506,[\"85\",\"static/chunks/c33a6526-a35d7c4ab569570b.js\",\"511\",\"static/chunks/8b972f87-7000886eafc63ce4.js\",\"159\",\"static/chunks/aa7336d7-b690888f504d16c3.js\",\"300\",\"static/chunks/300-171190a177420fb6.js\",\"573\",\"static/chunks/app/%5B%5B...slug%5D%5D/page-fe771f97d594b6b7.js\"],\"\"]\nf:I[6719,[\"85\",\"static/chunks/c33a6526-a35d7c4ab569570b.js\",\"511\",\"static/chunks/8b972f87-7000886eafc63ce4.js\",\"159\",\"static/chunks/aa7336d7-b690888f504d16c3.js\",\"300\",\"static/chunks/300-171190a177420fb6.js\",\"573\",\"static/chunks"])</script><script>self.__next_f.push([1,"/app/%5B%5B...slug%5D%5D/page-fe771f97d594b6b7.js\"],\"Nav\"]\n10:I[2396,[\"85\",\"static/chunks/c33a6526-a35d7c4ab569570b.js\",\"511\",\"static/chunks/8b972f87-7000886eafc63ce4.js\",\"159\",\"static/chunks/aa7336d7-b690888f504d16c3.js\",\"300\",\"static/chunks/300-171190a177420fb6.js\",\"573\",\"static/chunks/app/%5B%5B...slug%5D%5D/page-fe771f97d594b6b7.js\"],\"Content\"]\n12:I[7931,[\"85\",\"static/chunks/c33a6526-a35d7c4ab569570b.js\",\"511\",\"static/chunks/8b972f87-7000886eafc63ce4.js\",\"159\",\"static/chunks/aa7336d7-b690888f504d16c3.js"])</script><script>self.__next_f.push([1,"\",\"300\",\"static/chunks/300-171190a177420fb6.js\",\"573\",\"static/chunks/app/%5B%5B...slug%5D%5D/page-fe771f97d594b6b7.js\"],\"PrevNextNav\"]\n13:I[4377,[\"85\",\"static/chunks/c33a6526-a35d7c4ab569570b.js\",\"511\",\"static/chunks/8b972f87-7000886eafc63ce4.js\",\"159\",\"static/chunks/aa7336d7-b690888f504d16c3.js\",\"300\",\"static/chunks/300-171190a177420fb6.js\",\"573\",\"static/chunks/app/%5B%5B...slug%5D%5D/page-fe771f97d594b6b7.js\"],\"GA\"]\n"])</script><script>self.__next_f.push([1,"6:[[\"$\",\"meta\",\"0\",{\"charSet\":\"utf-8\"}],[\"$\",\"title\",\"1\",{\"children\":\"2. Создание проекта\"}],[\"$\",\"meta\",\"2\",{\"name\":\"viewport\",\"content\":\"width=device-width, initial-scale=1\"}],[\"$\",\"link\",\"3\",{\"rel\":\"canonical\",\"href\":\"https://githowto.com/ru/create_a_project\"}],[\"$\",\"link\",\"4\",{\"rel\":\"alternate\",\"hrefLang\":\"x-default\",\"href\":\"https://githowto.com/create_a_project\"}],[\"$\",\"link\",\"5\",{\"rel\":\"alternate\",\"hrefLang\":\"pt-BR\",\"href\":\"https://githowto.com/pt-BR/create_a_project\"}],[\"$\",\"link\",\"6\",{\"rel\":\"alternate\",\"hrefLang\":\"ru\",\"href\":\"https://githowto.com/ru/create_a_project\"}],[\"$\",\"link\",\"7\",{\"rel\":\"alternate\",\"hrefLang\":\"uk\",\"href\":\"https://githowto.com/uk/create_a_project\"}],[\"$\",\"meta\",\"8\",{\"name\":\"next-size-adjust\"}]]\n"])</script><script>self.__next_f.push([1,"b:null\n11:T18cf,"])</script><script>self.__next_f.push([1,"var Component=(()=\u003e{var m=Object.create;var t=Object.defineProperty;var p=Object.getOwnPropertyDescriptor;var g=Object.getOwnPropertyNames;var u=Object.getPrototypeOf,N=Object.prototype.hasOwnProperty;var f=(i,e)=\u003e()=\u003e(e||i((e={exports:{}}).exports,e),e.exports),x=(i,e)=\u003e{for(var l in e)t(i,l,{get:e[l],enumerable:!0})},a=(i,e,l,o)=\u003e{if(e\u0026\u0026typeof e==\"object\"||typeof e==\"function\")for(let c of g(e))!N.call(i,c)\u0026\u0026c!==l\u0026\u0026t(i,c,{get:()=\u003ee[c],enumerable:!(o=p(e,c))||o.enumerable});return i};var k=(i,e,l)=\u003e(l=i!=null?m(u(i)):{},a(e||!i||!i.__esModule?t(l,\"default\",{value:i,enumerable:!0}):l,i)),j=i=\u003ea(t({},\"__esModule\",{value:!0}),i);var r=f((I,s)=\u003e{s.exports=_jsx_runtime});var b={};x(b,{default:()=\u003ey,frontmatter:()=\u003ew});var n=k(r()),w={title:\"2. \\u0421\\u043E\\u0437\\u0434\\u0430\\u043D\\u0438\\u0435 \\u043F\\u0440\\u043E\\u0435\\u043A\\u0442\\u0430\"};function h(i){let e=Object.assign({h3:\"h3\",ul:\"ul\",li:\"li\",h2:\"h2\",em:\"em\",p:\"p\",code:\"code\",span:\"span\"},i.components),{Run:l,File:o,Output:c}=e;return o||d(\"File\",!0),c||d(\"Output\",!0),l||d(\"Run\",!0),(0,n.jsxs)(n.Fragment,{children:[(0,n.jsx)(e.h3,{children:\"\\u0426\\u0435\\u043B\\u0438\"}),`\n`,(0,n.jsxs)(e.ul,{children:[`\n`,(0,n.jsx)(e.li,{children:\"\\u041D\\u0430\\u0443\\u0447\\u0438\\u0442\\u044C\\u0441\\u044F \\u0441\\u043E\\u0437\\u0434\\u0430\\u0432\\u0430\\u0442\\u044C Git-\\u0440\\u0435\\u043F\\u043E\\u0437\\u0438\\u0442\\u043E\\u0440\\u0438\\u0439 \\u0441 \\u043D\\u0443\\u043B\\u044F.\"}),`\n`]}),`\n`,(0,n.jsxs)(e.h2,{children:[(0,n.jsx)(e.em,{children:\"01\"}),\" \\u0421\\u043E\\u0437\\u0434\\u0430\\u0439\\u0442\\u0435 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0438\\u0446\\u0443 \\xABHello, World\\xBB\"]}),`\n`,(0,n.jsxs)(e.p,{children:[\"\\u041D\\u0430\\u0447\\u043D\\u0438\\u0442\\u0435 \\u0440\\u0430\\u0431\\u043E\\u0442\\u0443 \\u0432 \\u043F\\u0443\\u0441\\u0442\\u043E\\u0439 \\u0434\\u0438\\u0440\\u0435\\u043A\\u0442\\u043E\\u0440\\u0438\\u0438 (\\u043D\\u0430\\u043F\\u0440\\u0438\\u043C\\u0435\\u0440, \",(0,n.jsx)(e.code,{children:\"respositories\"}),\", \\u0435\\u0441\\u043B\\u0438 \\u0432\\u044B \\u0441\\u043A\\u0430\\u0447\\u0430\\u043B\\u0438 \\u0430\\u0440\\u0445\\u0438\\u0432 \\u0441 \\u043F\\u0440\\u0435\\u0434\\u044B\\u0434\\u0443\\u0449\\u0435\\u0433\\u043E \\u0448\\u0430\\u0433\\u0430) \\u0441 \\u0441\\u043E\\u0437\\u0434\\u0430\\u043D\\u0438\\u044F \\u043F\\u0443\\u0441\\u0442\\u043E\\u0439 \\u043F\\u043E\\u0434\\u0434\\u0438\\u0440\\u0435\\u043A\\u0442\\u043E\\u0440\\u0438\\u0438 \",(0,n.jsx)(e.code,{children:\"work\"}),\", \\u0437\\u0430\\u0442\\u0435\\u043C \\u0432\\u043E\\u0439\\u0434\\u0438\\u0442\\u0435 \\u0432 \\u043D\\u0435\\u0451 \\u0438 \\u0441\\u043E\\u0437\\u0434\\u0430\\u0439\\u0442\\u0435 \\u0442\\u0430\\u043C \\u0444\\u0430\\u0439\\u043B \",(0,n.jsx)(e.code,{children:\"hello.html\"}),\" \\u0441 \\u0442\\u0430\\u043A\\u0438\\u043C \\u0441\\u043E\\u0434\\u0435\\u0440\\u0436\\u0430\\u043D\\u0438\\u0435\\u043C:\"]}),`\n`,(0,n.jsx)(l,{children:(0,n.jsxs)(e.code,{className:\"code-highlight\",children:[(0,n.jsx)(e.span,{className:\"code-line\",children:`mkdir work\n`}),(0,n.jsx)(e.span,{className:\"code-line\",children:`cd work\n`}),(0,n.jsx)(e.span,{className:\"code-line\",children:`touch hello.html\n`})]})}),`\n`,(0,n.jsx)(o,{file:\"hello.html\",children:(0,n.jsx)(e.code,{className:\"language-html code-highlight\",children:(0,n.jsx)(e.span,{className:\"code-line\",children:`Hello, World\n`})})}),`\n`,(0,n.jsxs)(e.h2,{children:[(0,n.jsx)(e.em,{children:\"02\"}),\" \\u0421\\u043E\\u0437\\u0434\\u0430\\u0439\\u0442\\u0435 \\u0440\\u0435\\u043F\\u043E\\u0437\\u0438\\u0442\\u043E\\u0440\\u0438\\u0439\"]}),`\n`,(0,n.jsxs)(e.p,{children:[\"\\u0422\\u0435\\u043F\\u0435\\u0440\\u044C \\u0443 \\u0432\\u0430\\u0441 \\u0435\\u0441\\u0442\\u044C \\u0434\\u0438\\u0440\\u0435\\u043A\\u0442\\u043E\\u0440\\u0438\\u044F \\u0441 \\u043E\\u0434\\u043D\\u0438\\u043C \\u0444\\u0430\\u0439\\u043B\\u043E\\u043C. \\u0427\\u0442\\u043E\\u0431\\u044B \\u0441\\u043E\\u0437\\u0434\\u0430\\u0442\\u044C Git-\\u0440\\u0435\\u043F\\u043E\\u0437\\u0438\\u0442\\u043E\\u0440\\u0438\\u0439 \\u0438\\u0437 \\u044D\\u0442\\u043E\\u0439 \\u0434\\u0438\\u0440\\u0435\\u043A\\u0442\\u043E\\u0440\\u0438\\u0438, \\u0432\\u044B\\u043F\\u043E\\u043B\\u043D\\u0438\\u0442\\u0435 \\u043A\\u043E\\u043C\\u0430\\u043D\\u0434\\u0443 \",(0,n.jsx)(e.code,{children:\"git init\"}),\".\"]}),`\n`,(0,n.jsx)(l,{children:(0,n.jsx)(e.code,{className:\"code-highlight\",children:(0,n.jsx)(e.span,{className:\"code-line\",children:`git init\n`})})}),`\n`,(0,n.jsx)(c,{children:(0,n.jsx)(e.code,{className:\"language-git code-highlight\",children:(0,n.jsx)(e.span,{className:\"code-line\",children:`Initialized empty Git repository in /home/alex/githowto/repositories/work/.git/\n`})})}),`\n`,(0,n.jsxs)(e.h2,{children:[(0,n.jsx)(e.em,{children:\"03\"}),\" \\u0414\\u043E\\u0431\\u0430\\u0432\\u044C\\u0442\\u0435 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0438\\u0446\\u0443 \\u0432 \\u0440\\u0435\\u043F\\u043E\\u0437\\u0438\\u0442\\u043E\\u0440\\u0438\\u0439\"]}),`\n`,(0,n.jsx)(e.p,{children:\"\\u0422\\u0435\\u043F\\u0435\\u0440\\u044C \\u0434\\u0430\\u0432\\u0430\\u0439\\u0442\\u0435 \\u0434\\u043E\\u0431\\u0430\\u0432\\u0438\\u043C \\u0432 \\u0440\\u0435\\u043F\\u043E\\u0437\\u0438\\u0442\\u043E\\u0440\\u0438\\u0439 \\u0441\\u0442\\u0440\\u0430\\u043D\\u0438\\u0446\\u0443 \\xABHello, World\\xBB.\"}),`\n`,(0,n.jsx)(l,{children:(0,n.jsxs)(e.code,{className:\"code-highlight\",children:[(0,n.jsx)(e.span,{className:\"code-line\",children:`git add hello.html\n`}),(0,n.jsx)(e.span,{className:\"code-line\",children:`git commit -m \"Initial Commit\"\n`})]})}),`\n`,(0,n.jsx)(e.p,{children:\"\\u0412\\u044B \\u0443\\u0432\\u0438\\u0434\\u0438\\u0442\\u0435...\"}),`\n`,(0,n.jsx)(c,{children:(0,n.jsxs)(e.code,{className:\"language-git code-highlight\",children:[(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsx)(e.span,{className:\"token command\",children:\"$ git add hello.html\"}),`\n`]}),(0,n.jsxs)(e.span,{className:\"code-line\",children:[(0,n.jsxs)(e.span,{className:\"token command\",children:[\"$ git commit\",(0,n.jsx)(e.span,{className:\"token parameter\",children:\" -m\"}),\" \"]}),(0,n.jsx)(e.span,{className:\"token string\",children:'\"Initial commit\"'}),`\n`]}),(0,n.jsx)(e.span,{className:\"code-line\",children:`[main (root-commit) 5836970] Initial commit\n`}),(0,n.jsx)(e.span,{className:\"code-line\",children:` 1 file changed, 1 insertion(+)\n`}),(0,n.jsx)(e.span,{className:\"code-line\",children:` create mode 100644 hello.html\n`})]})})]})}function _(i={}){let{wrapper:e}=i.components||{};return e?(0,n.jsx)(e,Object.assign({},i,{children:(0,n.jsx)(h,i)})):h(i)}var y=_;function d(i,e){throw new Error(\"Expected \"+(e?\"component\":\"object\")+\" `\"+i+\"` to be defined: you likely forgot to import, pass, or provide it.\")}return j(b);})();\n;return Component;"])</script><script>self.__next_f.push([1,"d:[[\"$\",\"$Le\",null,{}],[\"$\",\"div\",null,{\"id\":\"wrap\",\"className\":\"page__ru__create_a_project\",\"children\":[[\"$\",\"$Lf\",null,{\"slug\":[\"ru\",\"create_a_project\"]}],[\"$\",\"main\",null,{\"id\":\"main\",\"className\":\"mx-auto max-w-5xl px-4 py-8 lg:py-16 lg:px-12\",\"children\":[[\"$\",\"article\",null,{\"className\":\"max-w-none prose dark:prose-invert prose-stone\",\"children\":[\"$\",\"div\",null,{\"className\":\"w-full\",\"children\":[[\"$\",\"h1\",null,{\"className\":\"title\",\"dangerouslySetInnerHTML\":{\"__html\":\"2. Создание проекта\"}}],[\"$\",\"$L10\",null,{\"content\":\"$11\",\"locale\":\"ru\"}]]}]}],[\"$\",\"$L12\",null,{\"locale\":\"ru\",\"nlSlug\":\"create_a_project\",\"hidden\":false}]]}],[\"$\",\"$L13\",null,{}]]}]]\n"])</script><script src="./github_files/js" data-nscript="afterInteractive"></script><script id="nextjs-google-analytics" data-nscript="afterInteractive">
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            
+            gtag('config', 'G-8GSQDRTTMN', {
+              page_path: window.location.pathname,
+              
+            });
+          </script><next-route-announcer style="position: absolute;"><template shadowrootmode="open"><div aria-live="assertive" id="__next-route-announcer__" role="alert" style="position: absolute; border: 0px; height: 1px; margin: -1px; padding: 0px; width: 1px; clip: rect(0px, 0px, 0px, 0px); overflow: hidden; white-space: nowrap; overflow-wrap: normal;">11. Создание тегов версий</div></template></next-route-announcer><div class="px-16 pt-16 pb-0 bg-gradient-to-b from-black to-blue-950 text-center text-xl text-white"><button class="absolute p-4 right-0 top-0 text-white hover:bg-white/20"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="xmark" class="svg-inline--fa fa-xmark text-white text-3xl" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path fill="currentColor" d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"></path></svg></button><p class="mb-4">Hi! I’ve just released a <b>brand-new FREE Git course</b> that lets you learn Git directly inside your code editor. Here’s a quick preview of the course:</p><div class="relative overflow-hidden group max-h-[300px]"><div class="relative anim-fill-both anim-size-2x anim-fadein-slide-from-bottom anim-delay-1000 anim-duration-2000 anim-custom duration-1000 transition-transform translate-y-4 group-hover:translate-y-0 "><svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="play" class="svg-inline--fa fa-play pointer-events-none absolute z-30 top-[200px] left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white text-6xl duration-1000 group-hover:scale-125 transition-all" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><g class="fa-duotone-group"><path class="fa-secondary" fill="currentColor" d=""></path><path class="fa-primary" fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></g></svg><div class="inline-block border-8 rounded-2xl border-[#5A6369]/[18%]  relative z-10 mx-auto aspect-[784/600] max-w-[1200px] will-change-transform  [mask-image:linear-gradient(to_bottom,black_15%,transparent_250px,transparent_100%)]"><div class="relative"><div class="z-[1] absolute inset-0 flex hover:cursor-pointer items-center justify-center opacity-50 hover:opacity-100"><div class="text-white drop-shadow-xl"><svg aria-hidden="true" focusable="false" data-prefix="fad" data-icon="play" class="svg-inline--fa fa-play h-32 w-32" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><g class="fa-duotone-group"><path class="fa-secondary" fill="currentColor" d=""></path><path class="fa-primary" fill="currentColor" d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80L0 432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"></path></g></svg></div></div><video src="https://gitbybit.com/images/web/screenshots/git-tutorial.mp4#t=0.001" class="max-w-full relative rounded-lg overflow-hidden aspect-[784/600]" width="1000" height="765" loop="" preload="auto" style="aspect-ratio: 1.30719 / 1;"></video></div></div></div></div><div class="p-4 pb-8"><a class="group Btn sm:transition-[shadow,opacity,transform,padding] mt-1 mr-1 inline-flex items-stretch text-xl no-underline text-white font-semibold rounded-md bg-primary-600 shadow-[0_0_0_1px_#EC000F22,0_3px_6px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] hover:shadow-[0_0_0_1px_#EC000F22,0_2px_3px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] hover:active:shadow-[0_0_0_1px_#EC000F22,0_0px_0px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] focus-visible:outline-offset-2" href="https://gitbybit.com/"><span class="inline-flex items-center gap-x-2 sm:transition-[shadow,opacity,transform,padding] w-full justify-center pt-2 pb-2 px-4 bg-primary-600 rounded-md shadow-[0_0px_0px_1px_#9c314c] group-hover:shadow-[0_0px_0px_1px_#9c314c,inset_0_2px_10px_3px_#c13d60,inset_0_5px_100px_0_rgba(255,255,255,0.2)] group-hover:group-active:shadow-[0_0px_0px_1px_#9c314c,inset_0_2px_10px_3px_#c13d60,inset_0_5px_100px_0_rgba(0,0,0,0.15)] hover:active:opacity-70 -translate-y-1  hover:active:translate-y-0"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="cat" class="svg-inline--fa fa-cat " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path fill="currentColor" d="M320 192l17.1 0c22.1 38.3 63.5 64 110.9 64c11 0 21.8-1.4 32-4l0 4 0 32 0 192c0 17.7-14.3 32-32 32s-32-14.3-32-32l0-140.8L280 448l56 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-144 0c-53 0-96-43-96-96l0-223.5c0-16.1-12-29.8-28-31.8l-7.9-1c-17.5-2.2-30-18.2-27.8-35.7s18.2-30 35.7-27.8l7.9 1c48 6 84.1 46.8 84.1 95.3l0 85.3c34.4-51.7 93.2-85.8 160-85.8zm160 26.5s0 0 0 0c-10 3.5-20.8 5.5-32 5.5c-28.4 0-54-12.4-71.6-32c0 0 0 0 0 0c-3.7-4.1-7-8.5-9.9-13.2C357.3 164 352 146.6 352 128c0 0 0 0 0 0l0-96 0-20 0-1.3C352 4.8 356.7 .1 362.6 0l.2 0c3.3 0 6.4 1.6 8.4 4.2c0 0 0 0 0 .1L384 21.3l27.2 36.3L416 64l64 0 4.8-6.4L512 21.3 524.8 4.3c0 0 0 0 0-.1c2-2.6 5.1-4.2 8.4-4.2l.2 0C539.3 .1 544 4.8 544 10.7l0 1.3 0 20 0 96c0 17.3-4.6 33.6-12.6 47.6c-11.3 19.8-29.6 35.2-51.4 42.9zM432 128a16 16 0 1 0 -32 0 16 16 0 1 0 32 0zm48 16a16 16 0 1 0 0-32 16 16 0 1 0 0 32z"></path></svg>Learn more...</span></a></div></div><div id="wrap" class="page__ru__tagging_versions"><nav class="sticky top-0 z-10 border-b-2 bg-primary-600 border-[#9c314c] shadow-[0_0_0_1px_#EC000F22,0_3px_6px_1px_#EC000F44] dark:bg-opacity-80 dark:backdrop-blur"><div class="mx-auto max-w-5xl px-2 py-1 lg:px-8"><div class="relative flex items-center justify-between"><div class="flex flex-1 items-stretch justify-start"><div class="flex flex-shrink-0 items-center text-2xl"><a class="py-2 px-4 rounded-md text-white hover:text-white hover:no-underline text-white hover:bg-primary-400 active:bg-primary-700 hover:text-white focus:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white [text-shadow:0_1px_0px_rgba(0,0,0,0.3)] dark:bg-opacity-20 dark:ring-opacity-20 dark:text-primary-100" href="https://githowto.com/ru"><span class="font-bold">Git</span>HowTo</a></div></div><div class="inset-y-0 right-0 flex items-center gap-2 sm:static sm:inset-auto"><button type="button" class="h-12 w-12 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-primary-400 active:bg-primary-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:bg-opacity-20 dark:ring-opacity-20 dark:text-primary-100" aria-label="Toggle dark mode"><div class="block dark:hidden"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="sun" class="svg-inline--fa fa-sun fa-fw fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M371.1 13.1c-1-5.3-4.6-9.8-9.6-11.9s-10.7-1.5-15.2 1.6L256 65.1 165.7 2.8c-4.5-3.1-10.2-3.7-15.2-1.6s-8.6 6.6-9.6 11.9L121 121 13.1 140.8c-5.3 1-9.8 4.6-11.9 9.6s-1.5 10.7 1.6 15.2L65.1 256 2.8 346.3c-3.1 4.5-3.7 10.2-1.6 15.2s6.6 8.6 11.9 9.6L121 391l19.8 107.9c1 5.3 4.6 9.8 9.6 11.9s10.7 1.5 15.2-1.6L256 446.9l90.3 62.3c4.5 3.1 10.2 3.7 15.2 1.6s8.6-6.6 9.6-11.9L391 391l107.9-19.8c5.3-1 9.8-4.6 11.9-9.6s1.5-10.7-1.6-15.2L446.9 256l62.3-90.3c3.1-4.5 3.7-10.2 1.6-15.2s-6.6-8.6-11.9-9.6L391 121 371.1 13.1zM265.1 97.7l79.1-54.5 17.4 94.5c1.2 6.5 6.3 11.6 12.8 12.8l94.5 17.4-54.5 79.1c-3.8 5.5-3.8 12.7 0 18.2l54.5 79.1-94.5 17.4c-6.5 1.2-11.6 6.3-12.8 12.8l-17.4 94.5-79.1-54.5c-5.5-3.8-12.7-3.8-18.2 0l-79.1 54.5-17.4-94.5c-1.2-6.5-6.3-11.6-12.8-12.8L43.2 344.1l54.5-79.1c3.8-5.5 3.8-12.7 0-18.2L43.2 167.8l94.5-17.4c6.5-1.2 11.6-6.3 12.8-12.8l17.4-94.5 79.1 54.5c5.5 3.8 12.7 3.8 18.2 0zM256 384a128 128 0 1 0 0-256 128 128 0 1 0 0 256zM160 256a96 96 0 1 1 192 0 96 96 0 1 1 -192 0z"></path></svg></div><div class="hidden dark:block"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="moon-stars" class="svg-inline--fa fa-moon-stars fa-fw fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M304 0c8.8 0 16 7.2 16 16l0 32 32 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-32 0 0 32c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-32-32 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l32 0 0-32c0-8.8 7.2-16 16-16zM156.6 163.9C85.3 180 32 243.8 32 320.2c0 88.5 71.6 160.2 159.8 160.2c25.7 0 50-6.1 71.5-16.9c-87.6-11.3-155.1-86.4-155.1-177.2c0-47.4 18.4-90.4 48.4-122.4zM0 320.2C0 214.1 85.8 128 191.8 128c5.5 0 10.9 .2 16.3 .7c7 .6 12.8 5.7 14.3 12.5s-1.6 13.9-7.7 17.3c-44.4 25.2-74.4 73-74.4 127.8c0 81 65.5 146.6 146.2 146.6c8.6 0 17-.7 25.1-2.2c6.9-1.2 13.8 2.2 17 8.5s1.9 13.8-3.1 18.7c-34.5 33.6-81.7 54.4-133.6 54.4C85.8 512.4 0 426.3 0 320.2zM432 160l0 64 64 0c8.8 0 16 7.2 16 16s-7.2 16-16 16l-64 0 0 64c0 8.8-7.2 16-16 16s-16-7.2-16-16l0-64-64 0c-8.8 0-16-7.2-16-16s7.2-16 16-16l64 0 0-64c0-8.8 7.2-16 16-16s16 7.2 16 16z"></path></svg></div></button><div class="" data-headlessui-state=""><div><button class="h-12 w-12 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-primary-400 active:bg-primary-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:bg-opacity-20 dark:ring-opacity-20 dark:text-primary-100" id="headlessui-menu-button-:r46:" type="button" aria-haspopup="menu" aria-expanded="false" data-headlessui-state=""><span class="sr-only">Open available languages</span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="bars" class="svg-inline--fa fa-bars fa-fw fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M0 80c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L16 96C7.2 96 0 88.8 0 80zM0 240c0-8.8 7.2-16 16-16l416 0c8.8 0 16 7.2 16 16s-7.2 16-16 16L16 256c-8.8 0-16-7.2-16-16zM448 400c0 8.8-7.2 16-16 16L16 416c-8.8 0-16-7.2-16-16s7.2-16 16-16l416 0c8.8 0 16 7.2 16 16z"></path></svg></button></div></div><div class="relative" data-headlessui-state=""><div><button class="h-12 w-12 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-primary-400 active:bg-primary-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:bg-opacity-20 dark:ring-opacity-20 dark:text-primary-100" id="headlessui-menu-button-:r47:" type="button" aria-haspopup="menu" aria-expanded="false" data-headlessui-state=""><span class="sr-only">Open available languages</span><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="globe" class="svg-inline--fa fa-globe fa-fw fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path fill="currentColor" d="M256 480c16.7 0 40.4-14.4 61.9-57.3c9.9-19.8 18.2-43.7 24.1-70.7l-172 0c5.9 27 14.2 50.9 24.1 70.7C215.6 465.6 239.3 480 256 480zM164.3 320l183.4 0c2.8-20.2 4.3-41.7 4.3-64s-1.5-43.8-4.3-64l-183.4 0c-2.8 20.2-4.3 41.7-4.3 64s1.5 43.8 4.3 64zM170 160l172 0c-5.9-27-14.2-50.9-24.1-70.7C296.4 46.4 272.7 32 256 32s-40.4 14.4-61.9 57.3C184.2 109.1 175.9 133 170 160zm210 32c2.6 20.5 4 41.9 4 64s-1.4 43.5-4 64l90.8 0c6-20.3 9.3-41.8 9.3-64s-3.2-43.7-9.3-64L380 192zm78.5-32c-25.9-54.5-73.1-96.9-130.9-116.3c21 28.3 37.6 68.8 47.2 116.3l83.8 0zm-321.1 0c9.6-47.6 26.2-88 47.2-116.3C126.7 63.1 79.4 105.5 53.6 160l83.7 0zm-96 32c-6 20.3-9.3 41.8-9.3 64s3.2 43.7 9.3 64l90.8 0c-2.6-20.5-4-41.9-4-64s1.4-43.5 4-64l-90.8 0zM327.5 468.3c57.8-19.5 105-61.8 130.9-116.3l-83.8 0c-9.6 47.6-26.2 88-47.2 116.3zm-143 0c-21-28.3-37.5-68.8-47.2-116.3l-83.7 0c25.9 54.5 73.1 96.9 130.9 116.3zM256 512A256 256 0 1 1 256 0a256 256 0 1 1 0 512z"></path></svg></button></div></div><a href="https://githowto.com/app" class="h-12 w-12 inline-flex items-center justify-center rounded-md p-2 text-white hover:bg-primary-400 active:bg-primary-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white dark:bg-opacity-20 dark:ring-opacity-20 dark:text-primary-100" aria-label="Toggle dark mode"><svg aria-hidden="true" focusable="false" data-prefix="fal" data-icon="user" class="svg-inline--fa fa-user fa-fw fa-xl " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="currentColor" d="M320 128a96 96 0 1 0 -192 0 96 96 0 1 0 192 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM32 480l384 0c-1.2-79.7-66.2-144-146.3-144l-91.4 0c-80 0-145 64.3-146.3 144zM0 482.3C0 383.8 79.8 304 178.3 304l91.4 0C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7L29.7 512C13.3 512 0 498.7 0 482.3z"></path></svg></a></div></div></div></nav><main id="main" class="mx-auto max-w-5xl px-4 py-8 lg:py-16 lg:px-12"><article class="max-w-none prose dark:prose-invert prose-stone"><div class="w-full"><h1 class="title">11. Создание тегов версий</h1><div><h3>Цели</h3>
+<ul>
+<li>Узнать, как создавать теги для коммитов для использования в будущем.</li>
+</ul>
+<p>Думаю, вы согласитесь, что работать с хешами коммитов напрямую просто неудобно. Разве не было бы здорово, если бы вы могли обозначать конкретные коммиты понятными для человека названиями? Таким образом, вы могли бы четко видеть важные вехи в истории проекта. Кроме того, вы могли бы легко перейти к определенной версии проекта по ее названию. Именно для этого в Git придумали теги.</p>
+<p>Давайте назовем текущую версию страницы <code>hello.html</code> первой, то есть <code>v1</code>.</p>
+<h2><em>01</em> Создайте тег первой версии</h2>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git tag v1
+</span><span class="code-line">git log
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git tag v1</span>
+</span><span class="code-line"><span class="token command">$ git log</span>
+</span><span class="code-line">b7614c1 2023-11-28 | Added HTML header (HEAD -&gt; main, tag: v1) [Alexander Shvets]
+</span><span class="code-line">46afaff 2023-11-28 | Added standard HTML page tags [Alexander Shvets]
+</span><span class="code-line">78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+</span><span class="code-line">5836970 2023-11-28 | Initial commit [Alexander Shvets]
+</span></code></pre></div>
+<p>Теперь текущая версия страницы называется <code>v1</code>.</p>
+<h2><em>02</em> Теги для предыдущих версий</h2>
+<p>Обозначим версию, предшествующую текущей, названием <code>v1-beta</code>. Прежде всего, мы переключимся на предыдущую версию. Вместо того чтобы искать хеш коммита, мы будем использовать обозначение <code>^</code>, а именно <code>v1^</code>, указывающее на коммит, предшествующий <code>v1</code>.</p>
+<blockquote>
+<p>Если обозначение <code>v1^</code> вызывает у вас какие-то проблемы, попробуйте также <code>v1~1</code>, указывающее на ту же версию. Это обозначение можно определить как «первую версию, предшествующую v1».</p>
+</blockquote>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git checkout v1^
+</span><span class="code-line">cat hello.html
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git checkout v1^</span>
+</span><span class="code-line">Note: switching to <span class="token string">'v1^'</span>.
+</span><span class="code-line">
+</span><span class="code-line">You are in <span class="token string">'detached HEAD'</span> state. You can look around, make experimental
+</span><span class="code-line">changes and commit them, and you can discard any commits you make in this
+</span><span class="code-line">state without impacting any branches by switching back to a branch.
+</span><span class="code-line">
+</span><span class="code-line">If you want to create a new branch to retain commits you create, you may
+</span><span class="code-line">do so (now or later) by using -c with the switch command. Example:
+</span><span class="code-line">
+</span><span class="code-line">  git switch -c &lt;new-branch-name&gt;
+</span><span class="code-line">
+</span><span class="code-line">Or undo this operation with:
+</span><span class="code-line">
+</span><span class="code-line">  git switch -
+</span><span class="code-line">
+</span><span class="code-line">Turn off this advice by setting config variable advice.detachedHead to false
+</span><span class="code-line">
+</span><span class="code-line">HEAD is now at 46afaff Added standard HTML page tags
+</span><span class="code-line">$ cat hello.html
+</span><span class="code-line">&lt;html&gt;
+</span><span class="code-line">  &lt;body&gt;
+</span><span class="code-line">    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+</span><span class="code-line">  &lt;/body&gt;
+</span><span class="code-line">&lt;/html&gt;
+</span></code></pre></div>
+<p>Это версия с тегами <code>&lt;html&gt;</code> и <code>&lt;body&gt;</code>, но еще <em>пока</em> без  <code>&lt;head&gt;</code>. Давайте сделаем ее версией <code>v1-beta</code>.</p>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git tag v1-beta
+</span><span class="code-line">git log
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git tag v1-beta</span>
+</span><span class="code-line"><span class="token command">$ git log</span>
+</span><span class="code-line">46afaff 2023-11-28 | Added standard HTML page tags (HEAD, tag: v1-beta) [Alexander Shvets]
+</span><span class="code-line">78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+</span><span class="code-line">5836970 2023-11-28 | Initial commit [Alexander Shvets]
+</span></code></pre></div>
+<h2><em>03</em> Переключение по имени тега</h2>
+<p>Теперь попробуйте попереключаться между двумя отмеченными версиями.</p>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git checkout v1
+</span><span class="code-line">git checkout v1-beta
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git checkout v1</span>
+</span><span class="code-line">Previous HEAD position was 46afaff Added standard HTML page tags
+</span><span class="code-line">HEAD is now at b7614c1 Added HTML header
+</span><span class="code-line"><span class="token command">$ git checkout v1-beta</span>
+</span><span class="code-line">Previous HEAD position was b7614c1 Added HTML header
+</span><span class="code-line">HEAD is now at 46afaff Added standard HTML page tags
+</span></code></pre></div>
+<h2><em>04</em> Просмотр тегов с помощью команды <code>tag</code></h2>
+<p>Вы можете увидеть, какие теги доступны, используя команду <code>git tag</code>.</p>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git tag
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git tag</span>
+</span><span class="code-line">v1
+</span><span class="code-line">v1-beta
+</span></code></pre></div>
+<h2><em>05</em> Просмотр Тегов в логах</h2>
+<p>Вы также можете посмотреть теги в логе.</p>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-300 text-stone-700 dark:bg-stone-800 dark:text-stone-400">Выполните</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto bg-stone-200 text-stone-600 dark:border dark:border-stone-900 dark:bg-stone-800 dark:text-stone-300"><code class="code-highlight"><span class="code-line">git log main --all
+</span></code></pre></div>
+<h4 class="mb-0 ml-2 text-base"><span class="rounded-t-lg px-4 py-1 inline-block bg-stone-800 text-stone-300 dark:bg-black dark:text-stone-400">Результат</span></h4><div class="prose-pre:m-0 mb-5"><pre class="text-sm leading-relaxed command-line not-prose p-4 rounded-md overflow-x-auto dark border border-stone-700 bg-stone-800 text-stone-300 dark:border-stone-900 dark:bg-black text-stone-300"><code class="language-git code-highlight"><span class="code-line"><span class="token command">$ git log main<span class="token parameter"> --all</span></span>
+</span><span class="code-line">b7614c1 2023-11-28 | Added HTML header (tag: v1, main) [Alexander Shvets]
+</span><span class="code-line">46afaff 2023-11-28 | Added standard HTML page tags (HEAD, tag: v1-beta) [Alexander Shvets]
+</span><span class="code-line">78433de 2023-11-28 | Added h1 tag [Alexander Shvets]
+</span><span class="code-line">5836970 2023-11-28 | Initial commit [Alexander Shvets]
+</span></code></pre></div>
+<p>Вы можете видеть теги (<code>v1</code> и <code>v1-beta</code>) в логе вместе с именем ветки (<code>main</code>). Кроме того, метка <code>HEAD</code> показывает коммит, на который вы переключились (на данный момент это <code>v1-beta</code>).</p></div></div></article><nav class="mt-16 gap-4 flex flex-col justify-between text-center sm:flex-row-reverse"><a class="group Btn sm:transition-[shadow,opacity,transform,padding] mt-1 mr-1 inline-flex items-stretch text-base no-underline text-white font-semibold rounded-md bg-primary-600 shadow-[0_0_0_1px_#EC000F22,0_3px_6px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] hover:shadow-[0_0_0_1px_#EC000F22,0_2px_3px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] hover:active:shadow-[0_0_0_1px_#EC000F22,0_0px_0px_1px_#EC000F44,inset_0_-5px_100px_0_#9c314c] focus-visible:outline-offset-2" href="https://githowto.com/ru/undoing_local_changes"><span class="inline-flex items-center gap-x-2 sm:transition-[shadow,opacity,transform,padding] w-full justify-center pt-2 pb-2 px-4 bg-primary-600 rounded-md shadow-[0_0px_0px_1px_#9c314c] group-hover:shadow-[0_0px_0px_1px_#9c314c,inset_0_2px_10px_3px_#c13d60,inset_0_5px_100px_0_rgba(255,255,255,0.2)] group-hover:group-active:shadow-[0_0px_0px_1px_#9c314c,inset_0_2px_10px_3px_#c13d60,inset_0_5px_100px_0_rgba(0,0,0,0.15)] hover:active:opacity-70 -translate-y-1  hover:active:translate-y-0"><span>12. Отмена локальных изменений (до индексации)</span><svg class="w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"></path></svg></span></a><a class="group Btn sm:transition-[shadow,opacity,transform,padding] mt-1 mr-1 inline-flex items-stretch text-base no-underline text-stone-600 dark:text-stone-100 font-normal rounded-md bg-white dark:bg-stone-500 shadow-[0_0_0_1px_#e0e0e0,0_1px_0_1px_#88888822,inset_0_-5px_100px_0_#e0e0e0] hover:shadow-[0_0_0_1px_#e0d2d4,0_1px_0_1px_#faf0f299,inset_0_-5px_100px_0_#e0d2d4] hover:active:shadow-[0_0_0_1px_#e0d2d4,0_1px_0_0_#e0d2d4,inset_0_-5px_100px_0_#e0d2d4] focus-visible:outline-offset-2" href="https://githowto.com/ru/getting_old_versions"><span class="inline-flex items-center gap-x-2 sm:transition-[shadow,opacity,transform,padding] w-full justify-center pt-2 pb-2 px-4 bg-white dark:bg-stone-500 rounded-md shadow-[0_0px_0px_1px_#e0e0e0] group-hover:shadow-[0_0px_0px_1px_#e0d2d4ff,inset_0_-5px_10px_10px_#faf0f2] dark:group-hover:shadow-[0_0px_0px_1px_#e0d2d4ff,inset_0_-5px_10px_10px_#faf0f244] group-hover:group-active:shadow-[0_0px_0px_1px_#e0d2d4,inset_0_-5px_10px_10px_#ffebef] hover:active:opacity-70 -translate-y-1  hover:active:translate-y-0"><svg class="w-6" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z"></path></svg><span>10. Получение старых версий</span></span></a></nav></main></div></body></html>
