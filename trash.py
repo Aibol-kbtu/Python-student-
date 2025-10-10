@@ -174,8 +174,174 @@ b = int(input("Height of parallelogram: "))
 print(f"Expected Output: {area_parallelogram(a,b):.1f}")
 """
 import json
-def square(a):
-    return a*a;
 
-a = int(input(":"))
-print(json.dumps(square(a)))
+# Sample JSON data (you can use this or load from a file)
+sample_json = '''
+{
+    "interface": [
+        {
+            "dn": "topology/pod-1/node-201/sys/phys-[eth1/33]",
+            "description": "",
+            "speed": "inherit",
+            "mtu": "9150"
+        },
+        {
+            "dn": "topology/pod-1/node-201/sys/phys-[eth1/34]",
+            "description": "",
+            "speed": "inherit", 
+            "mtu": "9150"
+        },
+        {
+            "dn": "topology/pod-1/node-201/sys/phys-[eth1/35]",
+            "description": "",
+            "speed": "inherit",
+            "mtu": "9150"
+        }
+    ]
+}
+'''
+
+
+def parse_interface_data(json_string):
+    """Parse JSON and display interface status in table format"""
+    data = json.loads(json_string)
+
+    print("Interface Status")
+    print("=" * 80)
+    print(f"{'DN':<50} {'Description':<20} {'Speed':<8} {'MTU':<6}")
+    print("-" * 80)
+
+    for interface in data['interface']:
+        dn = interface['dn']
+        description = interface['description'] or ' '
+        speed = interface['speed']
+        mtu = interface['mtu']
+
+        print(f"{dn:<50} {description:<20} {speed:<8} {mtu:<6}")
+
+
+# Run the function
+parse_interface_data(sample_json)
+
+import json
+
+def read_from_file(filename='sample-data.json'):
+    """Read and parse JSON data from file"""
+    try:
+        with open(filename, 'r') as file:
+            data = json.load(file)
+        return data
+    except FileNotFoundError:
+        print(f"Error: File {filename} not found")
+        return None
+    except json.JSONDecodeError:
+        print("Error: Invalid JSON format")
+        return None
+
+# Usage
+data = read_from_file('sample-data.json')
+if data:
+    print("JSON data loaded successfully!")
+
+import json
+import os
+
+
+def display_interface_status(filename='sample-data.json'):
+    """Complete solution for displaying interface status from JSON file"""
+
+    # Check if file exists
+    if not os.path.exists(filename):
+        print(f"Error: File '{filename}' not found")
+        return
+
+    try:
+        # Read and parse JSON file
+        with open(filename, 'r') as file:
+            data = json.load(file)
+
+        # Display header
+        print("Interface Status")
+        print("=" * 80)
+        print(f"{'DN':<50} {'Description':<20} {'Speed':<8} {'MTU':<6}")
+        print("-" * 80)
+
+        # Display interface data
+        for interface in data.get('interface', []):
+            dn = interface.get('dn', 'N/A')
+            description = interface.get('description', '') or ' '
+            speed = interface.get('speed', 'N/A')
+            mtu = interface.get('mtu', 'N/A')
+
+            print(f"{dn:<50} {description:<20} {speed:<8} {mtu:<6}")
+
+    except json.JSONDecodeError:
+        print("Error: Invalid JSON format in file")
+    except KeyError as e:
+        print(f"Error: Missing key in JSON data - {e}")
+    except Exception as e:
+        print(f"Unexpected error: {e}")
+
+
+# Run the function
+display_interface_status()
+
+import json
+
+
+def filter_interfaces(filename='sample-data.json', min_mtu=9000):
+    """Filter interfaces based on MTU value"""
+
+    with open(filename, 'r') as file:
+        data = json.load(file)
+
+    print(f"Interfaces with MTU >= {min_mtu}")
+    print("=" * 60)
+    print(f"{'DN':<40} {'MTU':<6}")
+    print("-" * 60)
+
+    filtered_count = 0
+    for interface in data['interface']:
+        mtu = int(interface['mtu'])
+        if mtu >= min_mtu:
+            print(f"{interface['dn']:<40} {mtu:<6}")
+            filtered_count += 1
+
+    print(f"\nTotal interfaces found: {filtered_count}")
+
+
+# Usage
+filter_interfaces()
+
+import json
+from collections import Counter
+
+
+def analyze_interface_data(filename='sample-data.json'):
+    """Analyze interface data and generate statistics"""
+
+    with open(filename, 'r') as file:
+        data = json.load(file)
+
+    interfaces = data['interface']
+
+    # Statistics
+    total_interfaces = len(interfaces)
+    speed_stats = Counter(interface['speed'] for interface in interfaces)
+    mtu_values = [int(interface['mtu']) for interface in interfaces]
+
+    print("Interface Data Analysis")
+    print("=" * 30)
+    print(f"Total interfaces: {total_interfaces}")
+    print(f"\nSpeed distribution:")
+    for speed, count in speed_stats.items():
+        print(f"  {speed}: {count}")
+
+    print(f"\nMTU Statistics:")
+    print(f"  Minimum MTU: {min(mtu_values)}")
+    print(f"  Maximum MTU: {max(mtu_values)}")
+    print(f"  Average MTU: {sum(mtu_values) / len(mtu_values):.1f}")
+
+
+# Usage
+analyze_interface_data()
